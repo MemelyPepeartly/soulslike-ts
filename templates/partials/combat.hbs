@@ -1,0 +1,29 @@
+<div class="hand-slots">
+  {{!-- Left Hand Slot --}}
+  <div class="hand-slot" data-hand="left">
+    <h3>Left Hand</h3>
+    {{#if system.hands.left}}
+      <div class="item-card" data-item-id="{{system.hands.left._id}}">
+        <img src="{{system.hands.left.img}}" alt="{{system.hands.left.name}}"/>
+        <h4>{{system.hands.left.name}}</h4>
+        {{!-- You can display more stats here --}}
+      </div>
+    {{else}}
+      <div class="slot-placeholder">Empty</div>
+    {{/if}}
+  </div>
+
+  {{!-- Right Hand Slot --}}
+  <div class="hand-slot" data-hand="right">
+    <h3>Right Hand</h3>
+    {{#if system.hands.right}}
+      <div class="item-card" data-item-id="{{system.hands.right._id}}">
+        <img src="{{system.hands.right.img}}" alt="{{system.hands.right.name}}"/>
+        <h4>{{system.hands.right.name}}</h4>
+        {{!-- You can display more stats here --}}
+      </div>
+    {{else}}
+      <div class="slot-placeholder">Empty</div>
+    {{/if}}
+  </div>
+</div>
