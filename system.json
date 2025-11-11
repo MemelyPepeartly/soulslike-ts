@@ -2,14 +2,11 @@
   "id": "soulslike",
   "title": "Soulslike RPG",
   "description": "It's just like Dark Souls!",
-  "version": "0.0.1",
+  "version": "0.0.3",
 
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
-
-
-
+    "minimum": 13,
+    "verified": 13
   },
 
   "authors": [
@@ -68,6 +65,7 @@
   },
 
   "url": "https://github.com/QuotePony/soulslike",
-  "manifest": "https://github.com/QuotePony/soulslike/releases/download/latest/system.json",
-  "download": "https://github.com/QuotePony/soulslike/releases/download/latest/system.zip",
+
+  "manifest": "https://github.com/QuotePony/soulslike/releases/latest/download/system.json",
+  "download": "https://github.com/QuotePony/soulslike/releases/latest/download/system.zip"
 }
