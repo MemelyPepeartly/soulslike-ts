@@ -1,28 +1,73 @@
 {
-    "id": "soulslike",
-    "title": "Soulslike RPG",
-    "description": "It's just like Dark Souls!",
-    "version": "0.0.1",
-    "compatibility": {
-        "minimum": "13",
-        "verified": "13"
+  "id": "soulslike",
+  "title": "Soulslike RPG",
+  "description": "It's just like Dark Souls!",
+  "version": "0.0.1",
+
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+
+
+
+  },
+
+  "authors": [
+    {
+      "name": "Quote"
+    }
+  ],
+
+  "esmodules": [
+    "dist/soulslike.js"
+  ],
+
+  "styles": [
+    "soulslike.css"
+  ],
+
+  "socket": false,
+
+  "grid": {
+    "distance": 1,
+    "units": "Meter"
+  },
+
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "posture",
+
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+
+  "packs": [],
+
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "enemy": {}
     },
-    "authors": [
-        {
-            "name": "Quote"
-        }
-    ],
-    "esmodules": [
-        "dist/soulslike.js"
-    ],
-    "styles": [
-        "soulslike.css"
-    ],
-    "socket": false,
-    "grid": {
-        "distance": 1,
-        "units": "Meter"
-    },
-    "primaryTokenAttribute": "hp",
-    "secondaryTokenAttribute": "posture"
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "spell": {},
+      "consumable": {},
+      "feature": {}
+    }
+  },
+
+  "initiative": "1d20",
+
+  "relationships": {
+    "requires": []
+  },
+
+  "url": "https://github.com/QuotePony/soulslike",
+  "manifest": "https://github.com/QuotePony/soulslike/releases/download/latest/system.json",
+  "download": "https://github.com/QuotePony/soulslike/releases/download/latest/system.zip",
 }
