@@ -2,6 +2,7 @@ import { SOULSLIKE } from "./modules/config.js";
 import SoulslikeActor from "./modules/objects/soulslikeActor.js";
 import SoulslikeCharacterSheet from "./modules/sheets/soulslikeCharacterSheet.js";
 import SoulslikeItemSheet from "./modules/sheets/soulslikeItemSheet.js";
+import "./styles/soulslike.less";
 
 const { DocumentSheetConfig } = foundry.applications.apps;
 type DocumentSheetConstructor = foundry.applications.api.DocumentSheetV2.AnyConstructor;
