@@ -1,9 +1,51 @@
 {
     "Actor": {
         "types": [
-            "Character"
+            "character",
+            "npc",
+            "enemy"
         ],
-        "Character": {
+        "character": {
+            "hp": {
+                "current": 10,
+                "min": 0
+            },
+            "level": 1,
+            "supplies": 5,
+            "capacity": 5,
+            "Vitality": 30,
+            "Posture": 4,
+            "Evasion": 0,
+            "Strength": 0,
+            "Dexterity": 0,
+            "Spells": 0,
+            "Incantations": 0,
+            "hands": {
+                "left": null,
+                "right": null
+            }
+        },
+        "npc": {
+            "hp": {
+                "current": 10,
+                "min": 0
+            },
+            "level": 1,
+            "supplies": 5,
+            "capacity": 5,
+            "Vitality": 30,
+            "Posture": 4,
+            "Evasion": 0,
+            "Strength": 0,
+            "Dexterity": 0,
+            "Spells": 0,
+            "Incantations": 0,
+            "hands": {
+                "left": null,
+                "right": null
+            }
+        },
+        "enemy": {
             "hp": {
                 "current": 10,
                 "min": 0
@@ -26,15 +68,40 @@
     },
     "Item": {
         "types": [
-            "Weapon"
+            "weapon",
+            "armor",
+            "spell",
+            "consumable",
+            "feature"
         ],
-        "Weapon": {
+        "weapon": {
             "tags": "",
             "description": "",
             "damage_die": "d6",
             "damage_stat": "Strength",
             "action1": "Action 1",
             "action2": "Action 2"
+        },
+        "armor": {
+            "tags": "",
+            "description": "",
+            "defense": 0
+        },
+        "spell": {
+            "tags": "",
+            "description": "",
+            "cost": 1,
+            "effect": ""
+        },
+        "consumable": {
+            "tags": "",
+            "description": "",
+            "uses": 1
+        },
+        "feature": {
+            "tags": "",
+            "description": "",
+            "effect": ""
         }
     }
 }
