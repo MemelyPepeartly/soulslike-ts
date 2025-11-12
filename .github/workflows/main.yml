@@ -38,7 +38,7 @@ jobs:
       - name: Zip dist Directory
         run: |
           cd dist
-          zip -r ../system.zip ./*
+          zip -r ../soulslike.zip ./*
 
       - name: Update Latest Release
         id: update_latest_release
@@ -49,7 +49,9 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './dist/system.json,./system.zip'
+          artifacts: |
+            ./dist/system.json
+            ./soulslike.zip
           tag: latest
           body: ${{ github.event.inputs.release_notes }}
 
@@ -62,6 +64,8 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './dist/system.json,./system.zip'
+          artifacts: |
+            ./dist/system.json
+            ./soulslike.zip
           tag: ${{ steps.get_version.outputs.version }}
           body: ${{ github.event.inputs.release_notes }}
