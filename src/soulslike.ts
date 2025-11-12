@@ -22,7 +22,7 @@ Hooks.once("init", async () => {
 
   DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
   DocumentSheetConfig.registerSheet(Actor, "soulslike", SoulslikeCharacterSheet as unknown as DocumentSheetConstructor, {
-    types: ["Character"],
+    types: ["character"],
     makeDefault: true,
     label: "SOULSLIKE.SheetClassCharacter"
   });

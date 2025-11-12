@@ -40,7 +40,11 @@ export default class SoulslikeItemSheet extends api.HandlebarsApplicationMixin(s
   );
 
   static override PARTS = {
-    weapon: { template: "systems/soulslike/templates/sheets/item/weapon.hbs" }
+    weapon: { template: "systems/soulslike/templates/sheets/item/weapon.hbs" },
+    armor: { template: "systems/soulslike/templates/sheets/item/armor.hbs" },
+    spell: { template: "systems/soulslike/templates/sheets/item/spell.hbs" },
+    consumable: { template: "systems/soulslike/templates/sheets/item/consumable.hbs" },
+    feature: { template: "systems/soulslike/templates/sheets/item/feature.hbs" }
   };
 
   _configureRenderOptions(options: ItemSheetConfiguration): void {
